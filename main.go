@@ -107,8 +107,9 @@ const policyTemplate = `policy %q {
 
 const help = `Usage: ./tfc-policy-sets-migration <organization> <output-dir>
 
-Mirrors all manually-managed policy sets in a Terraform Cloud organization to
-files in a directory structure on the local disk. This directory structure may
-then be checked into a version control system in order to leverage the VCS
-integration with policy sets in Terraform Cloud.
+Mirrors all policy sets with individually managed policies in a Terraform Cloud
+organization to files in a directory structure on the local disk. This directory
+structure may then be checked into a version control system in order to leverage
+the VCS integration with policy sets in Terraform Cloud, or made into a tarball
+(tar.gz file) for direct API uploading.
 `
