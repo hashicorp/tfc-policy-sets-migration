@@ -24,7 +24,7 @@ To migrate these policy sets, being by following these steps:
    destination directory on your local disk for writing out policies and
    configurations:
    ```
-   » ./tfc-policy-sets-migration ryanuber /tmp/policy-sets
+   » ./tfc-policy-sets-migration hashicorp-v2 /tmp/policy-sets
    2019/07/08 10:58:40 Mirroring policy set "global" into /tmp/policy-sets/global
    2019/07/08 10:58:41 Mirroring policy set "sunny-day" into /tmp/policy-sets/sunny-day
    ```
