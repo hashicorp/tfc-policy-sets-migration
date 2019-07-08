@@ -11,7 +11,7 @@ Imagine you have a couple of policy sets in Terraform Cloud like so:
 
 ![policy-sets-index](assets/policy-sets-index.png)
 
-To migrate these policy sets, being by following these steps:
+To migrate these policy sets, begin by following these steps:
 
 1. Obtain a Terraform Cloud API token with appropriate permissions to create and
    manage policy sets, and export it to your local environment like this:
@@ -28,6 +28,9 @@ To migrate these policy sets, being by following these steps:
    2019/07/08 10:58:40 Mirroring policy set "global" into /tmp/policy-sets/global
    2019/07/08 10:58:41 Mirroring policy set "sunny-day" into /tmp/policy-sets/sunny-day
    ```
+   Note that during this step, only policy sets with individually managed
+   policies will be mirrored locally. Policy sets which are already versioned
+   will not be copied.
 4. Check out the directory structure created by the script to ensure it matches
    your policy set configuration in Terraform Cloud:
    ```
