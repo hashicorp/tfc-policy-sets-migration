@@ -18,6 +18,11 @@ To migrate these policy sets, begin by following these steps:
    ```
    export TFE_TOKEN=dXXE5KNVu4zJzg.atlasv1.w5vImfBX...
    ```
+   If you are using Terraform Enterprise (formerly Private Terraform
+   Enterprise), you may specify the address of your installation like so:
+   ```
+   export TFE_ADDRESS=https://yourdomain.com/
+   ```
 2. Note the organization name in Terraform Cloud you wish to migrate policy sets
    for.
 3. Invoke the migration utility, passing in the organization name, and the
